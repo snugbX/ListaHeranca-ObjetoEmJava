@@ -38,10 +38,10 @@ public class ContaEspecial extends ContaBancaria{
         if(valor <= super.getSaldo()){
             super.setSaldo(super.getSaldo() - valor);
             System.out.printf("Saque realizado com sucesso!\n Valor saque: %.2f\nSaldo atual: %.2f\n",valor,super.getSaldo());
-        }else if(valor <= limite){
+        }else if(valor <= (limite + super.getSaldo())){
+            this.limite -= (valor - super.getSaldo());
             super.setSaldo(super.getSaldo() - valor);
-            this.limite -= valor;
-            System.out.printf("Saque realizado com sucesso!\n Valor saque: %.2f\nSaldo atual: %.2f\nLimite atual: ",valor,super.getSaldo(),this.limite);
+            System.out.printf("Saque realizado com sucesso!\n Valor saque: %.2f\nSaldo atual: %.2f\nLimite atual: %.2f\n\n",valor,super.getSaldo(),this.limite);
         }else{
             System.out.printf("Saldo insuficiente!!\n Valor saque: %.2f\nSaldo atual: %.2f\n",valor,super.getSaldo());
         }
