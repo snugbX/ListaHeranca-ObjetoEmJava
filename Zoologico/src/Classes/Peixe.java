@@ -23,6 +23,6 @@ public class Peixe extends Animal{
     
     @Override
     public void dadosAnimal() {
-        System.out.println("__________________Dados do(s) Animal(s)________________\n nome: " + super.getNome() + "\n comprimento: " + super.getComprimento() + " cm\n numeroPatas=: " + super.getNumeroPatas() + "\n cor: " + super.getCor() + "\n ambiente: " + super.getAmbiente() + "\n velocidadeMedia: " + super.getVelocidadeMedia() + " m/s\n Caracteristica: "+caracteristica+"\n");
+        System.out.println("__________________Dados do Animal________________\n nome: " + super.getNome() + "\n comprimento: " + super.getComprimento() + " cm\n numeroPatas=: " + super.getNumeroPatas() + "\n cor: " + super.getCor() + "\n ambiente: " + super.getAmbiente() + "\n velocidadeMedia: " + super.getVelocidadeMedia() + " m/s\n Caracteristica: "+caracteristica+"\n");
     }
 }

@@ -75,7 +75,7 @@ public class Animal {
     // Meu metodo toString para a impressão dos dados de minha classe 
     
     public void dadosAnimal() {
-        System.out.println("__________________Dados do(s) Animal(s)________________\n nome: " + nome + "\n comprimento: " + comprimento + " cm\n numeroPatas=: " + numeroPatas + "\n cor: " + cor + "\n ambiente: " + ambiente + "\n velocidadeMedia: " + velocidadeMedia + " m/s\n");
+        System.out.println("__________________Dados do Animal________________\n nome: " + nome + "\n comprimento: " + comprimento + " cm\n numeroPatas=: " + numeroPatas + "\n cor: " + cor + "\n ambiente: " + ambiente + "\n velocidadeMedia: " + velocidadeMedia + " m/s\n");
     }
 
     @Override
