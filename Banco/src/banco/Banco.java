@@ -14,6 +14,8 @@ public class Banco {
         System.out.println(p.dadosConta());
         p.sacar(500);
         p.depositar(10);
+        p.setDiaDeRendimento(10);
+        p.calculaNovoSaldo((float) 0.013);
         System.out.println(p.dadosConta());
         
         // Conta Especial objeto

@@ -24,8 +24,8 @@ public class ContaPoupanca extends ContaBancaria{
     public void calculaNovoSaldo(float taxa){
         if(this.diaDeRendimento>0){
             double valorgerado = this.diaDeRendimento*(super.getSaldo()*taxa);
-            super.setSaldo(super.getSaldo()*valorgerado);
-            System.out.printf("\nRendimento: %.2f\nSaldo atual: %.2f\nQuantidade de dias: %\n",valorgerado,super.getSaldo(),this.diaDeRendimento);
+            super.setSaldo(super.getSaldo() + valorgerado);
+            System.out.printf("\nRendimento: %.2f\nSaldo atual: %.2f\nQuantidade de dias: "+this.diaDeRendimento+"\n",valorgerado,super.getSaldo());
         }
     }
 
